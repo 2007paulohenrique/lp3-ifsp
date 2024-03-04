@@ -7,7 +7,7 @@ num = 10
 num2 = 10.00
 
 # Booleano - True. False
-verdade= True
+verdade = True
 mentira = False
 
 # str - sequencia de caracteres
