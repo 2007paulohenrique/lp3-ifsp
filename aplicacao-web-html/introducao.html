@@ -1,5 +1,13 @@
 <html> 
     <head>
+        <title> titulo </title> <!--aparece na barra de título do navegador quando a página é visualizada.-->
+
+        <meta name = ”author” content = “Luk Cho Man”>
+        <meta name = ”description” content = “Aula 3 HTML”>
+        <meta name = ”keywords” content = “IFSP, SPO,SCI”>
+        <!--meta informações são utilizadas para localizar a
+        página por mecanismos de busca. -->
+
         <style>
             body {
                 /*background-image: url("");
@@ -13,13 +21,64 @@
     </head>
 
     <body> 
-        <center>
-            <p><b> TITUjbuhbLO </b></p>
+        <p align="center" ><b> TITULO </b></p> <!--p = paragrafo, b = negrito, align poder ser left, right ou center.-->
+        <center> <!--centraliza tudo que estiver dentro.-->
             <p> texto </p>
             <p> titulo imagem </p>
             <img src="url" />
             <p><a href="url"> nome link </a></p>
-            <br>
+            <br> <!--quebra de linha.-->
+
+            <marquee direction="up" behavior="scroll" bgcolor="blue" height="140" width="700" scrollamount="10" style="display: flex; justify-content: center;"> texto que se move </marquee>
+            <!--
+            behavior: Este atributo define o movimento do texto:
+                scroll: O texto se move de um lado para o outro sem parar.
+                slide: O texto desliza de um lado para o outro e para.
+                alternate: O texto vai de um lado para outro alternadamente
+            bgcolor: Define a cor de fundo da área da faixa onde o texto passa.
+            direction: Define a direção do movimento do texto dentro da area do marquee. Pode ser:
+                left: Movimento da direita para a esquerda (padrão).
+                right: Movimento da esquerda para a direita.
+                up: Movimento de baixo para cima.
+                down: Movimento de cima para baixo.
+            height: Define a altura da área do <marquee>.
+            width: Define a largura da área do <marquee>.
+            hspace: Define a quantidade de espaço horizontal ao redor do <marquee>.
+            vspace: Define a quantidade de espaço vertical ao redor do <marquee>.
+            loop: Define o número de vezes que o <marquee> repetira. -1(valor padrao) significa infinitamente.
+            scrollamount: Define a velocidade de rolagem do texto em pixels por segundo.
+            scrolldelay: Define o atraso em milissegundos antes de reiniciar a rolagem após completar uma iteração.
+            truespeed: Se definido como true, tenta manter uma velocidade de rolagem constante, independentemente do desempenho do navegador.
+            style="
+                display: flex;(permite que o conteudo dentro do marquee seja dinamico) 
+                justify-content: center;(alinhamento horizontal) 
+                align-items: center;(alinhamento vertical)"
+            cuidado com conflitos usando os dois alinhamentos simultaneamente
+            -->
+
+            <h1> texto muito grande </h1>
+            <h2> texto grande </h2>
+            <h3> texto medio </h3>
+            <h4> texto pequeno </h4>
+            <h5> texto muito pequeno </h5>
+            <h6> texto menor possivel </h6>
+
+            <div> <!--serve apenas como um contêiner genérico para o conteúdo dentro dela. não terá nenhuma aparência ou comportamento específico sem estilização adicional.-->
+                <h1>Título da Página</h1>
+                <p>Este é um parágrafo dentro de uma divisão.</p>
+                <img src="imagem.jpg">
+                <br>
+                <a href="pagina.html">Link para outra página</a>
+            </div>
         </center>
+
+        <pre align="center"> <!--usado quando se quer manter a formatacao de um texto tirado de algum lugar-->
+Bem-vindo à nossa página web!
+Nossa empresa oferece uma variedade de produtos e serviços para atender às suas necessidades. 
+Desde produtos eletrônicos até soluções de software,
+estamos aqui para ajudar.
+Explore nosso site para descobrir mais sobre o que temos a oferecer. Se tiver alguma dúvida, não hesite em nos contatar.
+Esperamos poder atendê-lo em breve!
+        </pre>
     </body>
 </html>
