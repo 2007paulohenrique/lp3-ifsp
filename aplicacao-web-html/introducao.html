@@ -25,8 +25,10 @@
         <center> <!--centraliza tudo que estiver dentro.-->
             <p> texto </p>
             <p> titulo imagem </p>
+            <p><i><u> texto em italico e sublinhado </u></i> </p> <!-- <i> italico, <u> sublinhado-->
             <img src="url" />
-            <p><a href="url"> nome link </a></p>
+            <p><a href="https://eadcampus.spo.ifsp.edu.br/"> link externo </a></p> <!-- link externo <a> -->
+            <p><a href="outra_aba.html"> link interno </a></p> <!-- link interno, pra outro arquivo na mesma pasta desse -->
             <br> <!--quebra de linha.-->
 
             <marquee direction="up" behavior="scroll" bgcolor="blue" height="140" width="700" scrollamount="10" style="display: flex; justify-content: center;"> texto que se move </marquee>
@@ -80,5 +82,94 @@ estamos aqui para ajudar.
 Explore nosso site para descobrir mais sobre o que temos a oferecer. Se tiver alguma dúvida, não hesite em nos contatar.
 Esperamos poder atendê-lo em breve!
         </pre>
+
+        <a href="url" download="nome_para_o_arquivo_que_sera_baixado.tipo do arquivo"> download pelo navegador </a>
+        <br>
+        <a href="url" type="o que e o tipo do arquivo/tipo do arquivo"> interpretado pelo navegador </a>
+        <!-- download = ao clicar no link, o arquivo do link sera baixado
+             type = indica como o navegador deve entender o arquivo, podendo ser aberto com certo 
+             aplicativo proprio para abrir arquivos de um certo tipo, ex: "video/mp4, audio/mp3"
+        -->
+
+        <!-- Listas <li></li>
+        listas ordenadas (com numeros indicando as linhas) começam com a tag <ol>
+        listas não ordenadas (com pontos ou algo parecido indicando as linhas) começam com a tag <ul>
+        Atributos listas ordenadas:
+        - start="" - indica por qual valor deve-se iniciar a ordenação da lista
+        - type="" - indica o tipo da ordenação:
+            "1" (números), 
+            "A" (letras maiúsculas), 
+            "a" (letras minúsculas), 
+            "I" (números romanos maiúsculos) 
+            "i" (números romanos minúsculos)
+        Atributos listas:
+        - title="" - texto que aparece ao passar o mouse por cima de um item da lista
+        -->
+
+        <ol start="5"> 
+            <li> Paulo </li>
+            <li> Henrique </li>
+            <li> Barbosa </li>
+            <li> Prado </li>
+            <li> Pereira </li>
+        </ol>
+
+        <ol type="I">
+            <li> Paulo </li>
+            <li> Henrique </li>
+            <li> Barbosa </li>
+            <li> Prado </li>
+            <li> Pereira </li>
+        </ol>
+        
+        <ol type="A">
+            <li> Paulo </li>
+            <li> Henrique </li>
+            <li> Barbosa </li>
+            <li> Prado </li>
+            <li> Pereira </li>
+        </ul>
+
+        <br>
+
+        <!--style="border: largura da margem estilo da margem cor; list-style-type: tipo de marcação; width: largura da lista;"-->
+        <ul style="border: 20px solid #ffffff; list-style-type: square; width: 200px">
+            <li title="informações">Item 1</li>
+            <li title="informações">Item 2</li>
+            <li title="informações">Item 3</li>
+        </ul>
+        
+        <br>
+
+        <hr>
+        <ul>
+            <li> Paulo </li>
+            <li> Henrique </li>
+            <li> Barbosa </li>
+            <li> Prado </li>
+            <li> Pereira </li>
+        </ul>
+        <hr>
+
+        <!-- tabelas -->
+        <table>
+            <tr><td> Aluno </td><td> Idade </td><td> numero </td></tr>
+            <tr><td> Paulo </td><td> 12 </td><td> 1 </td></tr>
+            <tr><td> Henrique </td><td> 34 </td><td> 2 </td></tr>
+            <tr><td> Barbosa </td><td> 44 </td><td> 3 </td></tr>
+        </table>
+        <br>
+
+        <!-- audios e videos -->
+        <center>
+            <audio autoplay="autoplay" controls="controls">
+                <source src="ainn-cafezinho.mp3"
+                type="audio/mp3" />
+            </audio>
+        </center>
+
+        <br>
+
+        <video src="CHRIS BUMSTEAD VS RAMON DINO 😱 BETTER QUALITY MR OLYMPIA 2022.mp4"> </video>
     </body>
 </html>
