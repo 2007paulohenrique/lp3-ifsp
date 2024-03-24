@@ -1,20 +1,17 @@
-nota = int(input("coloque uma nota entre 0 e 100"))
-nota_convertida = ""
+nota = int(input("coloque uma nota entre 0 e 100:\n"))
 
 if nota >= 0 and nota <= 100:
     if nota >= 90:
-        nota = "A"
+        print("A")
     elif nota >= 80:
-        nota = "B"
+        print("B")
     elif nota >= 70:
-        nota = "C"
+        print("C")
     elif nota >= 60:
-        nota = "E"
+        print("D")
     else:
-        nota = "F"
+        print("F")
 
-    print(nota)
-    
 else:
     print("nota invalida")
 

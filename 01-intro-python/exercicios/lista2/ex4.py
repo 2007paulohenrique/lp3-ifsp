@@ -2,9 +2,9 @@ candidato1 = 0
 candidato2 = 0
 candidato3 = 0
 
-while True:
-    voto = int(input("Digite 1 para votar no candidato1, 2 para o candidato2, 3 para o candidato3 e 0 para encerrar os votos: "))
+voto = int(input("Digite 1 para votar no candidato1, 2 para o candidato2, 3 para o candidato3 e 0 para encerrar os votos:\n"))
 
+while True:
     if voto == 0:
         break
     elif voto == 1:
@@ -15,6 +15,9 @@ while True:
         candidato3 += 1
     else:
         print("Número não aceito")
+
+    voto = int(input())
+
 
 print(f"candidato1: {candidato1} votos\ncandidato2: {candidato2} votos\ncandidato3: {candidato3} votos")
 

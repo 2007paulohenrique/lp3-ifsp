@@ -2,7 +2,7 @@ import random
 
 
 numero_aleatorio = random.randint(1, 100)
-numero_inserido = int(input("insira um numero entre 1 e 100"))
+numero_inserido = int(input("insira um numero entre 1 e 100:\n"))
 
 
 while True:
@@ -16,4 +16,4 @@ while True:
     else:
         print("seu numero é maior")
 
-    numero_inserido = int(input("novo numero"))
+    numero_inserido = int(input("novo numero:\n"))

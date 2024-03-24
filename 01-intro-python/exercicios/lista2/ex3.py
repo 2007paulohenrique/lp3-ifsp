@@ -1,4 +1,4 @@
-frase = input("escreva uma frase")
+frase = input("escreva uma frase:\n")
 vogais = 0
 consoantes = 0
 
