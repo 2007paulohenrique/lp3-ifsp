@@ -21,11 +21,11 @@
     </head>
 
     <body> 
-        <p align="center" ><b> TITULO </b></p> <!--p = paragrafo, b = negrito, align poder ser left, right ou center.-->
+        <p align="center" ><strong> TITULO </strong></p> <!--p = paragrafo, strong = negrito, align poder ser left, right ou center.-->
         <center> <!--centraliza tudo que estiver dentro.-->
             <p> texto </p>
             <p> titulo imagem </p>
-            <p><i><u> texto em italico e sublinhado </u></i> </p> <!-- <i> italico, <u> sublinhado-->
+            <p><em><u> texto em italico e sublinhado </u></em> </p> <!-- <em> italico, <u> sublinhado-->
             <img src="url" />
             <p><a href="https://eadcampus.spo.ifsp.edu.br/"> link externo </a></p> <!-- link externo <a> -->
             <p><a href="outra_aba.html"> link interno </a></p> <!-- link interno, pra outro arquivo na mesma pasta desse -->
@@ -133,15 +133,14 @@ Esperamos poder atendê-lo em breve!
         <br>
 
         <!--style="border: largura da margem estilo da margem cor; list-style-type: tipo de marcação; width: largura da lista;"-->
-        <ul style="border: 20px solid #ffffff; list-style-type: square; width: 200px">
+        <ul style="border: 5px solid #ffffff; list-style-type: square; width: 100px">
             <li title="informações">Item 1</li>
             <li title="informações">Item 2</li>
             <li title="informações">Item 3</li>
         </ul>
-        
-        <br>
 
-        <hr>
+        <br>
+        
         <ul>
             <li> Paulo </li>
             <li> Henrique </li>
@@ -149,27 +148,99 @@ Esperamos poder atendê-lo em breve!
             <li> Prado </li>
             <li> Pereira </li>
         </ul>
-        <hr>
+
+        <br>
 
         <!-- tabelas -->
-        <table>
-            <tr><td> Aluno </td><td> Idade </td><td> numero </td></tr>
+        <table border="1" style="border: 5px solid #ffffff"> <!-- border="" borda entre as linhas e colunas, style="border:" borda da tabela -->
+            <tr><td> Aluno </td><td> Idade </td><td> numero </td></tr> <!-- tr = linha, td = coluna -->
             <tr><td> Paulo </td><td> 12 </td><td> 1 </td></tr>
             <tr><td> Henrique </td><td> 34 </td><td> 2 </td></tr>
             <tr><td> Barbosa </td><td> 44 </td><td> 3 </td></tr>
         </table>
+
         <br>
 
-        <!-- audios e videos -->
         <center>
+            <!-- audios e videos -->
+
             <audio autoplay="autoplay" controls="controls">
-                <source src="ainn-cafezinho.mp3"
+                <source src="arquivo.mp3"
                 type="audio/mp3" />
             </audio>
+
+            <br>
+
+            <video controls width="600" height="400">
+                <source src="arquivo.mp4" type="video/mp4">
+            </video>
+            <br>
+        
+
+            <!-- target 
+                    esta na outra_aba.html
+            -->
+
+            <a href="outra_aba.html" target="_blank"> blank </a>
+            <br>
+            
+            <!-- mapa e formas no mapa -->
+
+            <img src="imagem.jpg" width="340" height="167" border="0" usemap="#nome" />
+            <map name="nome">
+                <area alt="texto" coords="10,10,110,91"
+                href="linkparaqualaimagemtemanda" target="_blank" />
+
+                <area alt="Banco Nacional do Desenvolvimento" coords="122,10,222,96"
+                href="linkparaqualaimagemtemanda" target="_blank" />
+
+                <area alt="Banco do Brasil" coords="232,10,332,95"
+                href="linkparaqualaimagemtemanda" target="_blank" />     
+
+                <area alt="Caixa Econômica Federal" coords="6,106,111,159"
+                href="linkparaqualaimagemtemanda" target="_blank" />
+
+                <area alt="Banco do Nordeste" coords="120,107,227,159"
+                href="linkparaqualaimagemtemanda" target="_blank" />
+
+                <area alt="Banco da Amazônia" coords="230,107,334,166"
+                href="linkparaqualaimagemtemanda" target="_blank" />
+
+                <area shape="rect" coords="224, 30, 276, 82"
+                href="arquivo.tipo" alt="Square"> <!-- forma -->
+            </map>
+
+            <figure class="html5">
+                <img src="imagem.jpg" alt="texto" title="titulo imagem" width="150" height="150" /> <!-- alt define o texto que sera exibido ao passar o mouse por cima da figura -->
+                <figcaption> descricao </figcaption>
+            </figure>
+
+            <!-- colspan é o numero de colunas que terao em uma celula -->
+
+            <table border="1" style="text-align: center;">
+                <tr><td colspan="2"> Grupo A </td></tr>
+                <tr><td> Palmeiras 0 </td><td > 1 N. Horizontino </td></tr>
+                <tr><td colspan="2"> Grupo B </td></tr>
+                <tr><td> Santos 0 </td><td> 1 Bragantino </td></tr>
+            </table>
+
+            <!-- rowspan é o numero de linhas contidas numa celula -->
+
+            <table border="1">
+                <tr><td rowspan="4"> Grupo A </td>
+                <td> Brasil </td></tr>
+                <tr> <td> Croácia </td></tr>
+                <tr> <td> Japão </td></tr>
+                <tr> <td> Austrália </td></tr>
+            </table>
+
+            <!--
+                tags de tabela
+                    th - Define uma célula de cabeçalho da tabela
+                    thead - Define o cabeçalho da tabela
+                    tbody - define o corpo da tabela
+                    tfoot - define o rodapé da tabela
+            -->
         </center>
-
-        <br>
-
-        <video src="CHRIS BUMSTEAD VS RAMON DINO 😱 BETTER QUALITY MR OLYMPIA 2022.mp4"> </video>
     </body>
 </html>
