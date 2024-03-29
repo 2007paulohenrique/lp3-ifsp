@@ -13,9 +13,9 @@
                 /*background-image: url("");
                 background-size: cover;
                 background-position: center;*/
-                background-color: rgb(0, 0, 0); 
+                background-color: #000000; 
                 font-size: 25px;
-                color: rgb(255, 255, 255); /* cor do texto */
+                color: #ffffff; /* cor do texto */
             }
 
             a {
@@ -28,7 +28,9 @@
         </style>
     </head>
 
-    <body> 
+    <body> <!-- tudo o que aparecera na pagina -->
+        <!-- textos -->
+
         <!-- <p> = paragrafo, <b> = negrito, align poder ser left, right ou center = posicao na pagina -->
         <p align="center" ><b> texto no centro em negrito </b></p> 
 
@@ -52,7 +54,8 @@ Explore nosso site para descobrir mais sobre o que temos a oferecer. Se tiver al
 Esperamos poder atendê-lo em breve!
             </pre>
 
-            <!-- colocar um texto que se movimenta -->
+            <!-- texto que se movimenta <marquee> -->
+
             <marquee direction="up" behavior="alternate" bgcolor="blue" height="150" width="1000"
             scrollamount="7" style="display: flex; justify-content: center;"> texto que se move </marquee>
             <!--
@@ -97,6 +100,26 @@ Esperamos poder atendê-lo em breve!
             <br> <!--quebra de linha.-->
 
             <!-- 
+            target 
+                target="_blank": link aberto em uma nova aba do navegador
+                target="_self": link aberto na mesma aba do navegador (padrão)
+                target="_parent": link aberto no quadro pai, útil em quadros (framesets)
+                target="_top": link substitui todo o conteúdo na aba do navegador
+            --> 
+
+            <a href="https://eadcampus.spo.ifsp.edu.br/" target="_blank"> blank </a>
+            <br><br>
+            <a href="https://eadcampus.spo.ifsp.edu.br/" target="_self"> self </a> 
+            <br><br>
+            <a href="https://eadcampus.spo.ifsp.edu.br/" target="_top"> top </a>
+            <br><br>
+
+            <!-- imagem clicavel (com link) -->
+            <a href="https://www.techtudo.com.br/listas/2023/06/o-que-e-html-5-edsoftwares.ghtml" target="_blank">
+                <img src="imagem_exemplo.png">
+            </a>
+
+            <!-- 
             type="" mostra ao navegador como entender o arquivo, ex: "video/mp4", "audio/mp3, "image/png" 
             usado normalmente nas tags <link> ou <script>
             -->
@@ -104,172 +127,10 @@ Esperamos poder atendê-lo em breve!
             <!-- <div> = contêiner genérico para o conteúdo dentro dela, nao tendo nenhuma 
             aparencia ou comportamento especifico sem estilização adicional -->
             <div> </div>
-        </center>
 
-        <!-- Listas <li></li>
-        listas ordenadas (com numeros indicando as linhas) começam com a tag <ol>
-        listas não ordenadas (com pontos ou algo parecido indicando as linhas) começam com a tag <ul>
-        Atributos listas ordenadas:
-        - start="" - indica por qual valor deve-se iniciar a ordenação da lista
-        - type="" - indica o tipo da ordenação:
-            "1" (números), 
-            "A" (letras maiúsculas), 
-            "a" (letras minúsculas), 
-            "I" (números romanos maiúsculos) 
-            "i" (números romanos minúsculos)
-        Atributos listas:
-        - title="" - texto que aparece ao passar o mouse por cima de um item da lista
-        -->
-
-        <ol start="5"> 
-            <li> Paulo </li>
-            <li> Henrique </li>
-            <li> Barbosa </li>
-            <li> Prado </li>
-            <li> Pereira </li>
-        </ol>
-
-        <ol type="I">
-            <li> Paulo </li>
-            <li> Henrique </li>
-            <li> Barbosa </li>
-            <li> Prado </li>
-            <li> Pereira </li>
-        </ol>
-        
-        <ol type="A">
-            <li> Paulo </li>
-            <li> Henrique </li>
-            <li> Barbosa </li>
-            <li> Prado </li>
-            <li> Pereira </li>
-        </ul>
-
-        <br>
-
-        <!--style="border: largura da margem estilo da margem cor; list-style-type: tipo de marcação; width: largura da lista;"-->
-        <ul style="border: 5px solid #ffffff; list-style-type: square; width: 100px">
-            <li title="informações">Item 1</li>
-            <li title="informações">Item 2</li>
-            <li title="informações">Item 3</li>
-        </ul>
-
-        <br>
-        
-        <ul>
-            <li> Paulo </li>
-            <li> Henrique </li>
-            <li> Barbosa </li>
-            <li> Prado </li>
-            <li> Pereira </li>
-        </ul>
-
-        <br>
-
-        <!-- tabelas -->
-        <table border="1" style="border: 5px solid #ffffff"> <!-- border="" borda entre as linhas e colunas, style="border:" borda da tabela -->
-            <tr><td> Aluno </td><td> Idade </td><td> numero </td></tr> <!-- tr = linha, td = coluna -->
-            <tr><td> Paulo </td><td> 12 </td><td> 1 </td></tr>
-            <tr><td> Henrique </td><td> 34 </td><td> 2 </td></tr>
-            <tr><td> Barbosa </td><td> 44 </td><td> 3 </td></tr>
-        </table>
-
-        <br>
-
-        <center>
-            <!-- audios e videos -->
-
-            <audio autoplay="autoplay" controls="controls">
-                <source src="arquivo.mp3"
-                type="audio/mp3" />
-            </audio>
-
-            <br>
-
-            <video controls width="600" height="400">
-                <source src="arquivo.mp4" type="video/mp4">
-            </video>
-            <br>
-        
-
-            <!-- target 
-                    esta na outra_aba.html
-            -->
-
-            <a href="outra_aba.html" target="_blank"> blank </a>
-            <br>
-            
-            <!-- mapa e formas no mapa -->
-
-            <img src="imagem.jpg" width="340" height="167" border="0" usemap="#nome" />
-            <map name="nome">
-                <area alt="texto" coords="10,10,110,91"
-                href="linkparaqualaimagemtemanda" target="_blank" />
-
-                <area alt="Banco Nacional do Desenvolvimento" coords="122,10,222,96"
-                href="linkparaqualaimagemtemanda" target="_blank" />
-
-                <area alt="Banco do Brasil" coords="232,10,332,95"
-                href="linkparaqualaimagemtemanda" target="_blank" />     
-
-                <area alt="Caixa Econômica Federal" coords="6,106,111,159"
-                href="linkparaqualaimagemtemanda" target="_blank" />
-
-                <area alt="Banco do Nordeste" coords="120,107,227,159"
-                href="linkparaqualaimagemtemanda" target="_blank" />
-
-                <area alt="Banco da Amazônia" coords="230,107,334,166"
-                href="linkparaqualaimagemtemanda" target="_blank" />
-
-                <area shape="rect" coords="224, 30, 276, 82"
-                href="arquivo.tipo" alt="Square"> <!-- forma -->
-            </map>
-
-            <figure class="html5">
-                <img src="imagem.jpg" alt="texto" title="titulo imagem" width="150" height="150" /> <!-- alt define o texto que sera exibido ao passar o mouse por cima da figura -->
-                <figcaption> descricao </figcaption>
-            </figure>
-
-            <!-- colspan é o numero de colunas que terao em uma celula -->
-
-            <table border="1" style="text-align: center;">
-                <tr><td colspan="2"> Grupo A </td></tr>
-                <tr><td> Palmeiras 0 </td><td > 1 N. Horizontino </td></tr>
-                <tr><td colspan="2"> Grupo B </td></tr>
-                <tr><td> Santos 0 </td><td> 1 Bragantino </td></tr>
-            </table>
-
-            <!-- rowspan é o numero de linhas contidas numa celula -->
-
-            <table border="1">
-                <tr><td rowspan="4"> Grupo A </td>
-                <td> Brasil </td></tr>
-                <tr> <td> Croácia </td></tr>
-                <tr> <td> Japão </td></tr>
-                <tr> <td> Austrália </td></tr>
-            </table>
-
-            <!--
-            tags de tabela
-            th - Define uma célula de cabeçalho da tabela
-            thead - Define o cabeçalho da tabela
-            tbody - define o corpo da tabela
-            tfoot - define o rodapé da tabela
-            -->
-
-            <table style="text-align: center;" border="1"> 
-                <thead>
-                    <tr><th>Marca</th><th>Modelo</th><th>Ano</th><th>Valor</th></tr> 
-                </thead>
-                <tbody>
-                    <tr><td> Volkswagen </td><td>Golf</td> <td>2009</td><td>R$38.500</td></tr>
-                    <tr><td> Fiat </td><td> Palio </td><td> 2010 </td><td> R$19.700 </td></tr>
-                    <tr><td> Honda </td><td> Civic </td><td> 2012 </td><td> R$61.500 </td></tr>
-                </tbody> 
-                <tfoot>
-                    <tr> <td colspan ="4">Melhor preço da Armenia </td> </tr>
-                </tfoot> 
-            </table>
+            <a href="estrutura_textos_links.html"> estrutura_textos_links </a>
+            <br><br>
+            <a href="imagens_audios_videos.html"> imagens_audios_videos</a>
         </center>
     </body>
 </html>
