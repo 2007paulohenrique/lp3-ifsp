@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Metodos {
     public static void main(String[] args) {
-        //principais metodos
+        //principais metodos de List
         List<Object> colecao = new ArrayList<>();
         List<Object> colecao2 = new ArrayList<>();
         Object obj = "abc";
