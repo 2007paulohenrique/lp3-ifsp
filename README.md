@@ -1,4 +1,4 @@
-# Aulas de lp2
+# Aulas de lp3
 
 Este repositório é destinado aos conteúdos de Linguagem de Programação 3 do curso de Informática do Instituto Federal de São Paulo. O lp3-331-Estudo-Python foca exclusivamente no estudo da programação em Python, abordando conceitos e recursos básicos da linguagem, incluindo loops e métodos de classes e módulos específicas, como math e random.
 
